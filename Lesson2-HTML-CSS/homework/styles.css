@@ -1,21 +1,39 @@
+html {
+    background-color: brown;
+}
 
-            h1 {
-                color: darkred;
-            }
+.wrapper {
+    text-align: center;
 
-            img {
-                width: 400px;
-            }
+}
 
-            #thirdDiv {
-                height: 600px;
-                width: 500px;
-                background-color: deeppink;
-                padding: 50px;
-                border: solid black 2px;
-            }
+ul {
 
-            #spanID {
-                font-size: 18px;
-                margin: 50px;
-            }
+}
+
+h1 {
+     color: yellowgreen;
+            
+    }
+
+
+img {
+    width: 400px;
+    
+}
+
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: deeppink;
+    padding: 50px;
+    border: solid black 2px;
+    
+}
+
+
+#spanID {
+    font-size: 18px;
+    margin: 50px;
+    
+}
