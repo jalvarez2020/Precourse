@@ -9,30 +9,60 @@ in this folder, you are in the wrong place.
 /* We will start this one off for you: */
 #exerciseOne {
 
+  display: block;
+  text-align: center;
+  
 }
 
 
 /* Exercise Two: Positioning a Header Bar*/
 
 /* Place code here */
-
+#exerciseTwo {
+  border: none;
+}
 
 
 /* Exercise Three: */
 
-/* Place code here */
 
+/* Place code here */
+#exerciseThree {
+  margin-top: 100px;
+  margin-left: 200px;
+  position: relative;
+}
 
 
 /* Exercise Four: */
 
 /* Place code here */
-
+#exerciseFour {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 
 /* Exercise Five */
 
 /* Place code here */
+#exerciseFive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  
+}
+
+
+#exerciseFive span {
+
+  margin: auto;
+  padding-top: 20px;
+
+}
+
 
 
 
@@ -40,4 +70,11 @@ in this folder, you are in the wrong place.
 
 #exerciseSeven {
   display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
+
+.items {
+  margin: auto;
+}
+
