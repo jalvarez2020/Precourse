@@ -4,18 +4,7 @@ function multiplyArguments() {
   // use the arguments keyword to multiply all of the arguments together and return the product
   // if no arguments are passed in return 0
   // if one argument is passed in just return it
-  if(arguments > 0) {
-    return arguments * arguments;
-  }
-
-  else if (arguments === arguments){
-    return arguments;
-  }
-
-  else {
-    return 0;
-  }
-
+ arguments * arguments;   
 }
 
 function getBiggest(x, y) {
@@ -147,7 +136,7 @@ function isPrime(num) {
                     return false;
 
                   }
-          }
+          } 
             return true;
           }
          
