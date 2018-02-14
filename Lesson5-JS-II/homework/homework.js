@@ -4,6 +4,17 @@ function multiplyArguments() {
   // use the arguments keyword to multiply all of the arguments together and return the product
   // if no arguments are passed in return 0
   // if one argument is passed in just return it
+  if(arguments > 0) {
+    return arguments * arguments;
+  }
+
+  else if (arguments === arguments){
+    return arguments;
+  }
+
+  else {
+    return 0;
+  }
 
 }
 
@@ -122,13 +133,29 @@ function isPrime(num) {
   // hint: a prime number is only evenly divisible by itself and 1
   // hint2: you can solve this using a for loop
   // note: 0 and 1 are NOT considered prime numbers
-
-    for (let i = 0; i < num; i++) {
-          
-            num % i === 0;
-          
+          if(num === 1 || num === 0) {
+                return false;
           }
+
+          else if(num === 2)  {
+            return true;
+      }
+
+          else { for(let i = 2; i < num; i++){
+                  if(num % i === 0){
+
+                    return false;
+
+                  }
+          }
+            return true;
+          }
+         
+    
   }
+
+
+
 
   
 
