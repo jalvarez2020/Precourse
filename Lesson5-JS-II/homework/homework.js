@@ -20,11 +20,11 @@ function multiplyArguments() {
 
 let argument;
 
-for(let i = 1; i <= arguments.length; i++) {
+for(var i = 1; i <= arguments.length; i++) {
 
     if(arguments.length === 2) {
 
-         argument = arguments[0] * arguments[1];
+         argument = arguments[0] * arguments[i];
          break;
 
       }
