@@ -29,13 +29,13 @@ for(let i = 1; i <= arguments.length; i++) {
 
       }
 
-      else if(arguments.length > 2){
+      else if(arguments.length === 3){
 
-          argument = arguments[0] * arguments[1] * arguments[2] * 3;
+          argument = arguments[0] * arguments[1] * arguments[2];
           break;
       }
 
-      else if(arguments.length >= 3){
+      else if(arguments.length === 4){
 
         argument = arguments[0] * arguments[1] * arguments[2] * arguments[3];
         break;
