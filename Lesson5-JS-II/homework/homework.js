@@ -20,7 +20,7 @@ function multiplyArguments() {
 
 let argument;
 
-for(var i = 1; i <= arguments.length; i++) {
+for(var i = 0; i < arguments.length; i++) {
 
     if(arguments.length === 2) {
 
