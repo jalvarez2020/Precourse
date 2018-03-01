@@ -44,9 +44,7 @@ function multiplyMysteryNumberByFive(mysteryNumberObject) {
   // multiply the mysteryNumber property by 5 and return the product
 
 
-  
-
-  return mysteryNumberObject[mysteryNumber] * 5;
+  return mysteryNumberObject.mysteryNumber * 5;
   
 
 }
@@ -54,22 +52,54 @@ function multiplyMysteryNumberByFive(mysteryNumberObject) {
 function deleteProperty(object, property) {
   // remove the property from the object
   // return the object
+
+  delete object[property];
+    return object;
 }
 
 function newUser(name, email, password) {
   // create a new object with properties matching the arguments passed in.
   // return the new object
+
+    const user = {
+      name: name,
+      email: email,
+      password: password,
+    };
+
+    return user;
 }
 
 function hasEmail(user) {
   // return true if the user has a value for the property 'email'
   // otherwise return false
+
+    if(user['email']) {
+
+        return true;
+    }
+
+    else {
+
+      return false;
+    }
 }
 
 function hasProperty(object, property) {
   // return true if the object has the value of the property argument
   // property is a string
   // otherwise return false
+
+    if(object[property]) {
+        
+      return true;
+
+    }
+
+    else {
+      return false;
+    }
+
 }
 
 function verifyPassword(user, password) {
