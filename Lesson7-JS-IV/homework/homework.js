@@ -147,6 +147,17 @@ function setUsersToPremium(users) {
   // set each user's isPremium property to true
   // return the users array
 
+    
+    for(let i = 0; i < users.length; i++){
+
+          users[i].isPremium = true;
+
+    }
+
+      return users;
+
+    
+
    
 
 }
