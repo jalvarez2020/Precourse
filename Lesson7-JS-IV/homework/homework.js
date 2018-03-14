@@ -188,17 +188,14 @@ function addCalculateDiscountPriceMethod(storeItem) {
   // discountPercentage -> .2
   // discountPrice = 20 - (20 * .2)
 
- 
+           storeItem['calculateDiscountPrice'] =  function(){
 
-          
-           storeItem['calculateDiscountPrice'] =  function(price, discountPercentage){
+             this.discountPrice = this.price - (this.price * this.discountPercentage);
 
-               let discountPrice = price - (price * discountPercentage);
-
-                    return discountPrice;
+                    return this.discountPrice;
           };
 
-          return storeItem;
+                return storeItem;
 }
 
 // Do not modify code below this line.
