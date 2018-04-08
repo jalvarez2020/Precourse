@@ -37,9 +37,10 @@ function addReverseString() {
   // hint:
   // you will need to use 'this' inside of reverse
 
-        this.prototype['reverse'] = function(){
-            return this.reverse();
-         };
+        this.constructor.prototype.reverse = function() {
+
+         return this.split('').reverse().join('');
+        }
 
 }
 

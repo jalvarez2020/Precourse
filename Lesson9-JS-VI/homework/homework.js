@@ -2,12 +2,20 @@
 
 function invokeCallback(cb) {
   // invoke cb
+
+    return cb(cb);
 }
 
 function sumArray(numbers, cb) {
   // sum up all of the integers in the numbers array
   // pass the result to cb
   // no return is necessary
+
+        for(let i = 0; i >= numbers.length; i++){
+              
+        }
+        
+
 }
 
 function forEach(arr, cb) {
