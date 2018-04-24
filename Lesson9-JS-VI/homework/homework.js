@@ -35,7 +35,9 @@ function map(arr, cb) {
   // iterate over each value in arr, pass it to cb, then place the value returned from cb into the new arr
   // the new array should be the same length as the array argument
 
-      
+
+
+return arr.map(cb);
 
 
 }
