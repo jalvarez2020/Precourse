@@ -28,17 +28,24 @@ function cacheFunction(cb) {
   // and return 25 directly and will not invoke cb again
 
     let memory = [];
+    let num = 0;
 
-    return function(x){
+      return function(x){
 
-      if(memory[x] === undefined){
-        
-        return memory[x] = cb(x);
-      }
+        let savedNum = parseInt(x);
 
-     return memory[x];
+        if(memory[savedNum] === undefined){
+          
+          memory[savedNum] = num + cb(x);
+          return memory[savedNum];
+        }
 
-    };
+        else{
+          
+          return memory[savedNum];
+        }
+
+      };
 
 }
 
