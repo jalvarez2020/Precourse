@@ -9,8 +9,8 @@ function counter() {
   let zero = 0;
 
     return function(){
-        return zero++;
-    }
+        return zero += 1;
+    };
 
 
 }
@@ -26,6 +26,20 @@ function cacheFunction(cb) {
   // if the function you return is invoked with 5 it would pass 5 to cb(5) and return 25
   // if the function you return is invoked again with 5 it will look on an object in the closure scope
   // and return 25 directly and will not invoke cb again
+
+    let memory = [];
+
+    return function(x){
+
+      if(memory[x] === undefined){
+        
+        return memory[x] = cb(x);
+      }
+
+     return memory[x];
+
+    };
+
 }
 
 // Do not modify code below this line.
