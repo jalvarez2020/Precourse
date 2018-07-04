@@ -2,6 +2,7 @@
   STEP 0: Create an empty array called 'toDoItems'.
 */
 
+  let toDoItems = [];
 // code here
 
 /* 
@@ -9,6 +10,8 @@
           Using a querySelector, select the span by it's id ('createdBy'). Then using the innerHTML property,
           add your name to the END of the current innerHTML.
 */
+
+  document.getElementById('createdBy').innerHTML += ' Javier Alvarez';
 
 // code here
 
@@ -18,8 +21,18 @@
           'complete' which should be set to false. Hint: use the 'this' keyword in the constructor function.
 */
 
-function ToDo () {
+function ToDo (){
+  
   // code here
+
+      class ToDo {
+          constructor(description){
+              this.description = description;
+              this.complete = false;
+          }
+      }
+
+
 }
 
 /* 
@@ -29,6 +42,10 @@ function ToDo () {
 */
 
 // code here
+
+      ToDo.prototype.completeToDo = function(){
+            this.complete = true;
+      }
 
 /*
   STEP 4: This function, buildToDo, will have two parameters.  The first is an object of class ToDo and 
@@ -48,6 +65,15 @@ function ToDo () {
 
 function buildToDo(todo, index) {
   // code here
+    const toDoShell = document.createElement('div');
+
+      toDoShell.appendChild('.toDoShell');
+      
+        let toDoText = document.createElement('span');
+          toDoText.innerHTML += description.todo;
+        
+          
+      
 }
 
 /* 
