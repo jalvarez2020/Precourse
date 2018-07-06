@@ -52,27 +52,45 @@ function ToDo (){
           the second is a numerical index.
            
           Inside this function it should:
-            1.) Create a new 'div' element. Set this to a variable 'toDoShell'.
-            2.) Give 'toDoShell' a class (for CSS) of 'toDoShell'.
-            3.) Create a new 'span' element. Set this to a variable called 'toDoText'.
-            4.) Using the toDo item passed in, set the 'toDoText' innerHTML to the value of the 'description' property on the toDo object.
-            5.) Set the id of 'toDoText' to the value of the index argument.
-            6.) Using an if statement, check to see if the 'complete' property on the object passed as the first argument 
+           x 1.) Create a new 'div' element. Set this to a variable 'toDoShell'. 
+           x 2.) Give 'toDoShell' a class (for CSS) of 'toDoShell'.
+           x 3.) Create a new 'span' element. Set this to a variable called 'toDoText'.
+           x 4.) Using the toDo item passed in, set the 'toDoText' innerHTML to the value of the 'description' property on the toDo object.
+           x 5.) Set the id of 'toDoText' to the value of the index argument.
+           x 6.) Using an if statement, check to see if the 'complete' property on the object passed as the first argument 
                   is set to true. If it is, give 'toDoText' a CSS class of 'completeText'. If it is not, do not give it a class.
-            7.) Append child 'toDoText' to 'toDoShell'
-            8.) return toDoShell
+           x 7.) Append child 'toDoText' to 'toDoShell'
+           x 8.) return toDoShell
 */
 
 function buildToDo(todo, index) {
   // code here
+    const body = document.querySelector('body');
     const toDoShell = document.createElement('div');
+      body.appendChild(toDoShell);
 
-      toDoShell.appendChild('.toDoShell');
-      
-        let toDoText = document.createElement('span');
-          toDoText.innerHTML += description.todo;
-        
-          
+          toDoShell.className = 'toDoShell';
+            
+          let toDoText = document.createElement('span');
+              
+          toDoText.innerHTML += toDo.description.todo;
+                
+          toDoText.id = index;
+
+        if(todo.complete === true){
+
+            toDoText.className = 'completeText';
+
+        }
+
+        else{
+
+            toDoText;
+        }
+
+        toDoShell.appendChild(toDoText);
+
+          return toDoShell;      
       
 }
 

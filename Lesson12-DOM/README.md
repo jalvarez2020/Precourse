@@ -150,7 +150,7 @@ We have the ability to create a new element set its style, class, id, attributes
 
     body.appendChild(newDiv);
 
-```
+
 ## Event Listeners
 
 An event listener is a function that fires when an event occurs. Events can be anything from a click, to a mouse entering the content area, to an image download finishing. We will explore a few different events, but there are dozens we can choose from.
