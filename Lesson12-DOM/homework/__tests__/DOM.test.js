@@ -1,3 +1,9 @@
+describe('Test suite runs', () => {
+  it('Will run the tests', () => {
+    expect(true).toBe(true);
+  })
+})
+
 const html = require('fs')
   .readFileSync('./Lesson12-DOM/homework/index.html')
   .toString();
