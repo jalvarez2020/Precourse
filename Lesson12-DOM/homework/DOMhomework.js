@@ -26,12 +26,15 @@ function ToDo (){
   // code here
 
       class ToDo {
+
           constructor(description){
               this.description = description;
               this.complete = false;
           }
       }
 
+        return 
+      
 
 }
 
@@ -45,7 +48,7 @@ function ToDo (){
 
       ToDo.prototype.completeToDo = function(){
             this.complete = true;
-      }
+      };
 
 /*
   STEP 4: This function, buildToDo, will have two parameters.  The first is an object of class ToDo and 
@@ -117,19 +120,24 @@ function buildToDos(toDos) {
         x  1.) Select the element with the id 'toDoContainer'.  Save this to a variable: 'toDoContainer'.
         x  2.) Set the innerHTML of 'toDoContainer' to an empty string. (This will let us refresh the elements, and display the new toDos)
         x  3.) Using the buildToDos function pass it the array toDoItems as it's only argument.
-          4.) Using the result of (3), loop over the array appending each element to 'toDoContainer'.
-          5.) at the very end of this file, the line before the comment "DO NOT CHANGE ANY CODE BELOW THIS LINE", call this function.
+        x  4.) Using the result of (3), loop over the array appending each element to 'toDoContainer'.
+        x  5.) at the very end of this file, the line before the comment "DO NOT CHANGE ANY CODE BELOW THIS LINE", call this function.
 
           You can now load your html file in your browser and see your work so far.
 */
 
 function displayToDos() {
   // code here
-  const toDoContainer = document.getElementById(toDoContainer);
+  const toDoContainer = document.getElementById('toDoContainer');
 
     toDoContainer.innerHTML += '';
 
       buildToDos(toDoItems);
+
+        toDoItems.forEach(function(array){
+
+              toDoContainer.appendChild(array);
+        });
 
         
         
@@ -197,7 +205,7 @@ function completeToDo(event) {
 
 
 // Call displayToDos here (Step 6)<-----
-
+displayToDos();
 
 // ---------------------------- DO NOT CHANGE ANY CODE BELOW THIS LINE ----------------------------- //
 if (typeof module !== 'undefined') {
