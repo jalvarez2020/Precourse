@@ -1,12 +1,12 @@
 /* 
-  STEP 0: Create an empty array called 'toDoItems'.
+  STEP x 0: Create an empty array called 'toDoItems'.
 */
 
   let toDoItems = [];
 // code here
 
 /* 
-  STEP 1: There is a span element currently on the page with the innerHTML of 'This app was created by:',
+  STEP x 1: There is a span element currently on the page with the innerHTML of 'This app was created by:',
           Using a querySelector, select the span by it's id ('createdBy'). Then using the innerHTML property,
           add your name to the END of the current innerHTML.
 */
@@ -21,26 +21,22 @@
           'complete' which should be set to false. Hint: use the 'this' keyword in the constructor function.
 */
 
-function ToDo (){
+function ToDo(){
   
   // code here
 
-      class ToDo {
+     let ToDo = class{
+        constructor(description){
+          this.description = description;
+          this.complete = false;
 
-          constructor(description){
-              this.description = description;
-              this.complete = false;
-          }
-      }
-
-        return 
-      
-
+        }
+     }
 }
 
 /* 
   STEP 3: Add a method called 'completeToDo' to the prototype of the ToDo class. 
-          It will not take any arguemnts. 
+          It will not take any arguments. 
           Inside the function set the ToDo's 'complete' property to true.
 */
 
@@ -76,7 +72,7 @@ function buildToDo(todo, index) {
             
           let toDoText = document.createElement('span');
               
-          toDoText.innerHTML += toDo.description.todo;
+          toDoText.innerHTML += ToDo.description.todo;
                 
           toDoText.id = index;
 
@@ -138,11 +134,6 @@ function displayToDos() {
 
               toDoContainer.appendChild(array);
         });
-
-        
-        
-
-
 }
 
 /* 
@@ -159,10 +150,12 @@ function displayToDos() {
 
 function addToDo() {
   // code here
+
+
 }
 
 /* 
-  STEP 8: In this step we will fire addToDo everytime the 'ADD' button is clicked.
+  STEP 8: In this step we will fire addToDo every time the 'ADD' button is clicked.
           1.) Select the element with the id 'addButton'
           2.) Add a 'click' event listener to this element, passing it the addToDo function as a callback
 */
@@ -170,7 +163,7 @@ function addToDo() {
 // cod here
 
 /* 
-  STEP 9: Finally in this step we will define the function to run when we want to compelte a toDo, and add that function to the click event
+  STEP 9: Finally in this step we will define the function to run when we want to complete a toDo, and add that function to the click event
             listener on the toDo element
           
           Note: We have not covered the argument every event listener receives, the 'event' object. There is a lot of data in this object, 
@@ -183,7 +176,7 @@ function addToDo() {
 */
 
 function completeToDo(event) {
-  // UNCOMMENT THE NEXT LINE
+  // UN COMMENT THE NEXT LINE
   // const index = event.target.id;
   // code here
 }
